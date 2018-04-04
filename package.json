@@ -12,7 +12,7 @@
     "e2e": "ng e2e",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build && cp -a dist/. public/ && cp -a dist/. ./"
   },
   "private": true,
   "dependencies": {
