@@ -9,7 +9,10 @@
     "build": "npm run config -- --environment=prod && ng build --environment=prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "postinstall": "npm run build"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +39,7 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
+    "gh-pages": "^1.1.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",
@@ -48,5 +52,6 @@
     "ts-node": "~3.0.4",
     "tslint": "~4.5.0",
     "typescript": "~2.3.3"
-  }
+  },
+  "homepage": "http://peimelo.github.io/recipes"
 }
