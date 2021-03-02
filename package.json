@@ -54,5 +54,8 @@
     "tslint": "~4.5.0",
     "typescript": "~2.3.3"
   },
+  "engines": {
+    "node": "6.x.x"
+  },
   "homepage": "http://peimelo.github.io/recipes"
 }
